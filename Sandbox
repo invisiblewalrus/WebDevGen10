@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sandbox</title>
+  </head>
+  <body>
+  	<h1>This is a title!!!</h1>
+    <p><b>mighty text</b></p>
+    <p><i>saucy text</i></p>
+    <p>as<sup>above</sup>so<sub>below</sub></p>
+    <p><del>crap</del><ins>fixed!</ins></p>
+
+    <hr />
+    <div id="ContentArea" style="color: purple;">
+        This text is displayed in purple.
+    </div>
+    <p><code>beepboopimsomecode;</code></p>
+    <p>here is a quote: <blockquote> You give a man a fish, he has a fish. You teach a man to fish, he has three or four fish.</blockquote></p>
+    <!-- shhhhh, secret!!! -->
+  </body>
+</html>
