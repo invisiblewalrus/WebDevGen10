@@ -15,7 +15,7 @@
         This text is displayed in purple.
     </div>
     <p><code>beepboopimsomecode;</code></p>
-    <p>here is a quote: <blockquote> You give a man a fish, he has a fish. You teach a man to fish, he has three or four fish.</blockquote></p>
+    <p>here is a quote: <blockquote> You give a man a <span style="background-color: blue">fish, he has a fish. You teach a man to fish </span>, he has three or four fish.</blockquote></p>
     <!-- shhhhh, secret!!! -->
   </body>
 </html>
