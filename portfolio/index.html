@@ -8,6 +8,33 @@
 <html lang="en">
 	<head>
 		<title>Mark's Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<style>
+			caption {
+				font-weight: bold;
+				font-size: 1.2em;
+				margin-bottom: 8px; 
+			}
+			table, th, td {
+				border: 1px solid #0d1f2d;
+				border-collapse: collapse;
+				padding: 5px 10px;
+			}
+			table {
+				width: 90%;
+				margin: auto;
+			}
+			tr {
+				height: 30px;
+			}
+			th {
+				background-color: #546a7b;
+				color: #f2eded;
+			}
+			tr:nth-child(odd) {
+				background-color: #e4c3ad;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -17,47 +44,114 @@
 				<h1>Portfolio for Mark Coretsopoulos</h1>
 			</header>
 
-			<nav>
-				<hr />
+			<nav class="border">
 					<p><a href="projects.html">Projects</a></p>
 
 					<p><a href="contact.html">Contact</a></p>
 
 					<p><a href="testimonials.html">Testimonials</a></p>
-				<hr />
+					<div class="clear-float"></div>
 			</nav>
 
 			<section>
 				<!-- Write out paragraphs -->
 
-				<article id="about-me">
+				<article class="border" id="about-me">
 					<h2><i>About Me</i></h2>
+
+					<img src="images/SelfieSmall.jpg" alt="Portrait of Mark Coretsopoulos"/>
 
 					<p>Mauris quis imperdiet nisl. Integer tincidunt odio consequat pretium tincidunt. Donec pharetra nisi <b>eget nisi pharetra</b>, eget euismod lorem dignissim. Vestibulum leo sem, commodo et dui nec, faucibus scelerisque orci. Nunc fermentum risus eu metus scelerisque pretium. Quisque vitae auctor sapien, ac dignissim orci. Quisque vehicula sagittis turpis non molestie. Donec eu congue nulla.</p>
 
 					<p>Etiam sed ipsum ut lacus ornare sodales. In lorem arcu, aliquam non pellentesque a, laoreet in nisl. <b>Sed facilisis sapien</b> nec eros aliquam, quis rhoncus ipsum tempus. Maecenas libero mauris, ornare auctor ante sed, fringilla aliquet leo. Nam pulvinar diam blandit mi fermentum imperdiet. Etiam congue tortor eu sem posuere, nec dictum turpis convallis.</p>
+
+					<div class="clear-float"></div>
 				</article>
 
 				<article id="past-experiences">
 					<h2><i>Past Experiences</i></h2>
 
-					<p>Vivamus sollicitudin nisl id enim condimentum, consequat laoreet risus dictum. Sed iaculis ligula leo, at sollicitudin neque molestie eget. Quisque eu metus mattis, scelerisque leo non, congue libero. Aenean tristique eleifend pretium. Sed congue lobortis mauris eu mattis.</p>
+					<img src="images/RoboticsCampSmall.jpg" alt="Children watch two LEGO robots battle in a ring." />
+					<div class="right-content">
+					<table border="1">
+						<caption>Employment History</caption>
+						<thead>
+							<tr>
+								<th>Years of Employment</th>
+								<th>Title</th>
+								<th>Company</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2018</td>
+								<td>Biomedical Imaging Group Assistant</td>
+								<td>University of Iowa</td>
+							</tr>
 
-					<p>Praesent commodo mauris vitae nunc porttitor, eu semper diam cursus. Sed eleifend urna at magna volutpat, in <b>rhoncus nunc fermentum</b>. Aenean vitae placerat augue, et suscipit eros. In non sodales massa. Etiam euismod leo a velit tempor laoreet et nec ante. </p>
+							<tr>
+								<td>2015-2019</td>
+								<td>Student</td>
+								<td>Macalester College</td>
+							</tr>
+
+							<tr>
+								<td>2014-2017</td>
+								<td>Summer Robotics Mentor</td>
+								<td>University of Iowa</td>
+							</tr>
+						</tbody>
+					</table>
+					</div>
+					<div class="clear-float"></div>
+
 				</article>
 
 				<article id="hobbies">
 					<h2><i>Hobbies</i></h2>
 
-					<p>Etiam sagittis libero lacus, sed aliquet nisi dictum id. <span style="background-color: lightblue; border: thin solid darkblue; ">Curabitur at ipsum vestibulum, condimentum lorem in, ultricies dui. Ut est eros, blandit ut mollis sit amet, tristique ut quam.</span> Maecenas facilisis risus ut lectus hendrerit tempus. Sed ultrices est lacus, eu placerat massa facilisis eleifend. Aenean urna neque, efficitur a vehicula sit amet, scelerisque tempor orci.</p>
+					<img src="images/MediaStudiesSmall.jpg" alt="Man tied to chair in dark room with camera equipment around him" />
 
-					<p>Donec iaculis erat quis sem vestibulum gravida eu vel nibh. Proin tincidunt, dolor at ullamcorper imperdiet, justo lorem iaculis ex, id pharetra ipsum nisi ac tellus. Nulla malesuada <b>urna at mauris ultricies pulvinar</b>. Donec mollis consequat tincidunt. Cras aliquet tincidunt dolor, in pharetra lorem porta eu. </p>
+					<div class="right-content">
+					<ul>
+						<li>Films</li>
+						<ol>
+							<li>Cat People</li>
+							<li>Badlands</li>
+							<li>Stalker</li>
+							<li>My Neighbor Totoro</li>
+							<li>Inherent Vice</li>
+						</ol>
+						<li>Filmmakers</li>
+						<ol>
+							<li>Hirokazu Kore-eda</li>
+							<li>Jacques Tourneur</li>
+							<li>Jonathan Demme</li>
+						</ol>
+					</ul>
+
+					<ul>
+						<li>Sports</li>
+						<ul>
+							<li>Rock Climbing</li>
+							<li>Hiking</li>
+							<li>Running</li>
+						</ul>
+						<li>Other Activities</li>
+						<ul>
+							<li>Photography</li>
+							<li>Filmmaking</li>
+							<li>Drawing</li>
+						</ul>
+					</ul>
+					</div>
+					<div class="clear-float"></div>
+
 				</article>
 
 			</section>
 
 			<footer>
-				<hr />
 				<p>
 					&copy; 2019 Mark Coretsopoulos. All rights reserved.
 				</p>

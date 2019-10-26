@@ -17,5 +17,27 @@
     <p><code>beepboopimsomecode;</code></p>
     <p>here is a quote: <blockquote> You give a man a <span style="background-color: blue">fish, he has a fish. You teach a man to fish </span>, he has three or four fish.</blockquote></p>
     <!-- shhhhh, secret!!! -->
+
+    <img src="https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg" alt="Photo of a pug with tongue out." style="border: thick blue solid; width: 200px;" />
+
+    <form action="fakePage.html" method="POST">
+            Text Input: <input type="text" name="myTextInput" required/><br />
+            Radio Buttons:<br />
+            <input type="radio" name="answer" value="YES" checked />Yes<br />
+            <input type="radio" name="answer" value="NO" />No<br />
+            <input type="radio" name="answer" value="MAYBE" />Maybe<br />
+            Password Input: <input type="password" name="userPassword" /><br />
+            <input type="checkbox" name="myChoices" value="Soup" checked/>Soup<br />
+            <input type="checkbox" name="myChoices" value="Salad" checked/>Salad<br />
+            <input type="checkbox" name="myChoices" value="Fries" checked/>Fries<br />
+            <input type="checkbox" name="myChoices" value="Dessert" checked/>Dessert<br />
+            <select name="phones">
+                <option value="iPhone6">Mac OS</option>
+                <option value="GalaxyS6">Windows</option>
+                <option value="Nexus5">Linux</option>
+            </select><br />
+            <textarea name="briefDescription"></textarea><br />
+            <input type="submit" /><input type="reset" /><br />
+    </form>
   </body>
 </html>

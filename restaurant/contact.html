@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+	Name: Mark Coretsopoulos
+	Date Created:
+	Most Recent Revision:
+-->
+<html lang="en">
+	<head>
+		<title>Contact Us</title>
+	</head>
+
+	<body>
+		<header>
+			<h1>Restaurant Name</h1>
+		</header>
+
+		<nav>
+			<hr/>
+			<p><a href="index.html">Home</a></p>
+			<p><a href="menu.html">Menu</a></p>
+			<p><a href="contact.html">Contact Us</a></p>
+			<hr/>
+		</nav>
+		<section>
+			<form action="submit.html" method="POST">
+				<p>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name">
+				</p>
+				<p>
+					<label for="email">Email:</label>
+					<input type="text" id="email" name="email">
+				</p>
+				<p>
+					<label for="phone">Phone:</label>
+					<input type="text" id="phone" name="phone">
+				</p>
+				<p>
+					<label for="reasonInquiry">Reason for Inquiry:</label>
+					<select id="reasonInquiry" name="reasonInquiry">
+						<option value="catering" selected>Catering</option>
+						<option value="privateParty">Private Party</option>
+						<option value="feedback">Feedback</option>
+						<option value="other">Other</option>
+					</select>
+				</p>
+				<p>
+					<label for="info">Additional Information:</label>
+					<textarea id="info" name="info"></textarea>
+				</p>
+				<p>
+					<label for="legendBeen">Have you been to the restaurant?</label>
+					<input type="radio" id="choice1" name="been" value="yes">
+					<label for="choice1">Yes</label>
+					<input type="radio" id="choice2" name="been" value="no">
+					<label for="choice2">No</label>
+				</p>
+				<p>
+					<label for="legendDay">Best days to contact you:</label>
+					<input type="checkbox" id="m" name="day" value="m">
+					<label for="m">M</label>
+					<input type="checkbox" id="t" name="day" value="t">
+					<label for="t">T</label>
+					<input type="checkbox" id="w" name="day" value="w">
+					<label for="w">W</label>
+					<input type="checkbox" id="th" name="day" value="th">
+					<label for="th">Th</label>
+					<input type="checkbox" id="f" name="day" value="f">
+					<label for="f">F</label>
+				</p>
+				<p>
+					<input type="submit" name="sendRequest" value="Send Request">
+				</p>
+				
+
+			</form>
+		</section>
+
+		<footer>
+			<hr/>
+			<p>1616 W Lake Street, Minneapolis, MN, 55408 </p>
+			<p>(651) 401-3216</p>
+		</footer>
+
+	</body>
+</html>
