@@ -14,6 +14,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Menu</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" type="text/css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Lobster|Work+Sans&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
 		<style type="text/css">
 			.menu {
@@ -27,15 +29,24 @@
 	</head>
 
 	<body>
+		<noscript>
+			<b>This website works best with JavaScript Enabled! Please enable it now before continuing</b>
+		</noscript>
 		<header>
-			<h1>Restaurant Name</h1>
+			<h1>JJ's Diner</h1>
 		</header>
 
-		<nav>
-			<a href="index.html" class="btn">Home</a>
-			<a href="menu.html" class="btn">Menu</a>
-			<a href="contact.html" class="btn">Contact Us</a>
-		</nav>
+		<ul class="nav nav-pills">
+			<li class="nav-item pill-1">
+				<a href="index.html" class="nav-link"><i class="fa fa-home"></i></a>
+			</li>
+			<li class="nav-item pill-2">
+				<a href="menu.html" class="nav-link active">Menu</a>
+			</li>
+			<li class="nav-item pill-3">
+				<a href="contact.html" class="nav-link">Contact Us</a>
+			</li>
+		</ul>
 
 		<div class="container">
 			<div class="row">
@@ -99,7 +110,32 @@
 						$7.95
 					</p>
 				</div>
-			</div>	
+			</div>
+			<table id="drinks" class="table table-striped">
+			<thead>
+				<tr>
+					<th colspan="2"><b>Beverages</b></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Root Beer</td>
+					<td>$3.00</td>
+				</tr>
+				<tr>
+					<td>Bottled Water</td>
+					<td>$1.25</td>
+				</tr>
+				<tr >
+					<td>Lemonade</td>
+					<td>$1.00</td>
+				</tr>
+				<tr>
+					<td>Iced Tea</td>
+					<td>$1.25</td>
+				</tr>
+			</tbody>
+		</table>	
 		</div>
 
 		<footer>

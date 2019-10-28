@@ -1,3 +1,10 @@
+/*
+	Name: Mark Coretsopoulos
+	Date Created: 10/27/19
+	Most Recent Revision: 10/27/19
+*/
+
+
 function clearErrors(){
 	for (var i = 0; i < document.forms["luckySevens"].elements.length; i++){
 		if (document.forms["luckySevens"].elements[i].parentElement.className.indexOf("has-") !=-1){

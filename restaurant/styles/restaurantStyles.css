@@ -1,39 +1,49 @@
 /*
-TODO change header font, background color for site (maybe different colors), pick new colors and styling, restaurant name
+	Name: Mark Coretsopoulos
+	Date Created: 10/25/19
+	Most Recent Revision: 10/27/19
 */
 
+
 body {
-	background-color: #fef9ff;
-	font-family: arial, helvetica, sans-serif;
+	background-color: #D5D5D5;
+	font-family: 'Work Sans', sans-serif;
 	color: #0d1f2d;
 	max-width: 900px;
 	margin: 0 auto;
 }
+.container{
+	background-color: #7689A9;
+	padding: 12px;
+}
 header,footer {
-	background-color: #5b7d87;
-	color: #fef9ff;
+	background-color: #051938;
+	color: #D5D5D5;
 	height: 100px;
 	text-align: center;
 	padding: 30px 10px 20px 10px;
 }
 h1 {
 	font-size: 2.5em;
+	font-family: 'Lobster', cursive;
+
 }
-nav {
-	border-top: thin #5b7d87 solid;
-    border-bottom: thin #5b7d87 solid;
-    padding-top: 12px;
-    padding-bottom: 12px;
+.nav {
+	border-bottom: : thin #5b7d87 solid;
+    padding: 10px;
     margin-top: 12px;
     margin-bottom: 12px;
 }
-nav .btn {
-	background-color: #5b7d87;
-    color: #fef9ff;
+.nav-pills .nav-link:not(.active) {
+	background-color:#051938;
 }
-nav .btn:hover {
+
+.nav-item:hover {
 	font-weight: bold;
 }
-nav .btn:visited {
-	color: #e4c3ad;
+.nav-link{
+	color: #FFFFFF;
+}
+.nav-link:visited {
+	color: #D5D5D5; 
 }
