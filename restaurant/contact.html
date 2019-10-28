@@ -6,7 +6,25 @@
 -->
 <html lang="en">
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Contact Us</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" type="text/css" /> 
+		<link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
+		<style type="">
+			.col-form-label {
+				text-align: left;
+			}
+			@media screen and (min-width: 36em){
+				.col-form-label{
+					text-align: right;
+				}
+			}
+			.required {
+				font-weight: bold;
+			}
+		</style>
+
 	</head>
 
 	<body>
@@ -15,72 +33,111 @@
 		</header>
 
 		<nav>
-			<hr/>
-			<p><a href="index.html">Home</a></p>
-			<p><a href="menu.html">Menu</a></p>
-			<p><a href="contact.html">Contact Us</a></p>
-			<hr/>
+			<a href="index.html" class="btn">Home</a>
+			<a href="menu.html" class="btn">Menu</a>
+			<a href="contact.html" class="btn">Contact Us</a>
 		</nav>
 		<section>
 			<form action="submit.html" method="POST">
-				<p>
-					<label for="name">Name:</label>
-					<input type="text" id="name" name="name">
-				</p>
-				<p>
-					<label for="email">Email:</label>
-					<input type="text" id="email" name="email">
-				</p>
-				<p>
-					<label for="phone">Phone:</label>
-					<input type="text" id="phone" name="phone">
-				</p>
-				<p>
-					<label for="reasonInquiry">Reason for Inquiry:</label>
-					<select id="reasonInquiry" name="reasonInquiry">
-						<option value="catering" selected>Catering</option>
-						<option value="privateParty">Private Party</option>
-						<option value="feedback">Feedback</option>
-						<option value="other">Other</option>
-					</select>
-				</p>
-				<p>
-					<label for="info">Additional Information:</label>
-					<textarea id="info" name="info"></textarea>
-				</p>
-				<p>
-					<label for="legendBeen">Have you been to the restaurant?</label>
-					<input type="radio" id="choice1" name="been" value="yes">
-					<label for="choice1">Yes</label>
-					<input type="radio" id="choice2" name="been" value="no">
-					<label for="choice2">No</label>
-				</p>
-				<p>
-					<label for="legendDay">Best days to contact you:</label>
-					<input type="checkbox" id="m" name="day" value="m">
-					<label for="m">M</label>
-					<input type="checkbox" id="t" name="day" value="t">
-					<label for="t">T</label>
-					<input type="checkbox" id="w" name="day" value="w">
-					<label for="w">W</label>
-					<input type="checkbox" id="th" name="day" value="th">
-					<label for="th">Th</label>
-					<input type="checkbox" id="f" name="day" value="f">
-					<label for="f">F</label>
-				</p>
-				<p>
-					<input type="submit" name="sendRequest" value="Send Request">
-				</p>
-				
+				<div class="form-group row">
+					<label for="name" class="col-sm-4 col-form-label required">Name:</label>
+					<div class="col-sm-4">
+						<input type="text" id="name" name="name" class="form-control">
+					</div>	
+				</div>
+				<div class="form-group row">
+					<label for="email" class="col-sm-4 col-form-label required">Email:</label>
+					<div class="col-sm-4">
+						<input type="text" id="email" name="email" class="form-control">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="phone" class="col-sm-4 col-form-label required">Phone:</label>
+					<div class="col-sm-4">
+						<input type="text" id="phone" name="phone" class="form-control">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="reasonInquiry" class="col-sm-4 col-form-label required">Reason for Inquiry:</label>
+					<div class="col-sm-4">
+						<select id="reasonInquiry" name="reasonInquiry" class="form-control">
+							<option value="catering" selected>Catering</option>
+							<option value="privateParty">Private Party</option>
+							<option value="feedback">Feedback</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="info" class="col-sm-4 col-form-label">Additional Information:</label>
+					<div class="col-sm-4">
+						<textarea id="info" name="info" class="form-control"></textarea>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="legendBeen" class="col-sm-4 col-form-label">Have you been to the restaurant?</label>
+					<div class="col-sm-4">
+						<div class="form-check-inline">
+							<label for="choice1" class="form-check-label">
+								<input type="radio" id="choice1" name="been" value="yes" class="form-check-input">Yes
+							</label>
+						</div>
+						<div class="form-check-inline">
+							<label for="choice2" class="form-check-label">
+								<input type="radio" id="choice2" name="been" value="no" class="form-check-input">No
+							</label>
+						</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="legendDay" class="col-sm-4 col-form-label required">Best days to contact you:</label>
+					<div class="col-sm-8">
+						<div class="form-check-inline">
+							<label for="m" class="form-check label">
+								<input type="checkbox" id="m" name="day" value="m" class="form-check-input">M  
+							</label>
+						</div>
+						<div class="form-check-inline">
+							<label for="t" class="form-check label">
+								<input type="checkbox" id="t" name="day" value="t" class="form-check-input">T
+							</label>
+						</div>
+						<div class="form-check-inline">
+							<label for="w" class="form-check label">
+								<input type="checkbox" id="w" name="day" value="w" class="form-check-input">W 
+							</label>
+						</div>
+						<div class="form-check-inline">
+							<label for="th" class="form-check label">
+								<input type="checkbox" id="th" name="day" value="th" class="form-check-input">Th  
+							</label>
+						</div>
+						<div class="form-check-inline">
+							<label for="f" class="form-check label">
+								<input type="checkbox" id="f" name="day" value="f" class="form-check-input">F  
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-sm-12 text-center">
+						<button type="submit" name="sendRequest" class="btn btn-primary">Send Request</button>
+					</div>
+				</div>
 
 			</form>
 		</section>
 
 		<footer>
-			<hr/>
 			<p>1616 W Lake Street, Minneapolis, MN, 55408 </p>
 			<p>(651) 401-3216</p>
 		</footer>
+
+		<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 	</body>
 </html>

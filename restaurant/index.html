@@ -4,9 +4,24 @@
 	Date Created:
 	Most Recent Revision:
 -->
+
 <html lang="en">
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Home Page</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" type="text/css" /> 
+		<link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
+		<style type="text/css">
+			@media (min-width: 400px){
+				.mx-auto {
+					width: 400px;
+				}
+			}
+			.col-12 {
+				margin: 12px;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -15,26 +30,39 @@
 		</header>
 
 		<nav>
-			<hr/>
-			<p><a href="index.html">Home</a></p>
-			<p><a href="menu.html">Menu</a></p>
-			<p><a href="contact.html">Contact Us</a></p>
-			<hr/>
+			<a href="index.html" class="btn">Home</a>
+			<a href="menu.html" class="btn">Menu</a>
+			<a href="contact.html" class="btn">Contact Us</a>
 		</nav>
-		<section>
-			<figure>
-				<img src="images/ScotlandSmall.jpg" alt="Small boy jumps in courtyard while people walk aroung him." />
-			</figure>
-			<article id="restaurant-description">
-				<p>Morbi ac nisi mollis, ultrices ipsum vitae, finibus justo. Nullam tempus, est venenatis rutrum pharetra, nulla orci sodales libero, sit amet pretium ipsum diam id quam. Donec tincidunt accumsan odio, quis aliquam dui sagittis et. Etiam quis enim tortor. Quisque ex erat, scelerisque nec quam at, ultricies dictum purus. Proin eleifend erat vitae lorem mollis, sit amet laoreet lectus dapibus. Pellentesque eget risus dictum, luctus erat rhoncus, vehicula nulla. Curabitur fermentum dui est, ut tincidunt eros lobortis eu. </p>
-			</article>
-		</section>
+
+		<div class="container">
+			<div class="mx-auto">
+				<div class="row">
+	    			<div class="col-12">
+	        			<img src="images/ScotlandSmall.jpg" alt="Photo of  Mark Coretsopoulos" class="img-fluid" />
+	    			</div>
+	    		</div>
+	    		<div class="row">
+	    			<div class="col-12">
+	        			<p class="text-justify">Pellentesque finibus vehicula scelerisque. Morbi eget quam aliquet, vehicula felis vitae, semper odio. Curabitur turpis lectus, ultricies vel nisi vulputate, porta congue sapien. Proin facilisis ipsum at lorem scelerisque tincidunt.Pellentesque finibus vehicula scelerisque. Morbi eget quam aliquet, vehicula felis vitae, semper odio. Curabitur turpis lectus, ultricies vel nisi vulputate, porta congue sapien. Proin facilisis ipsum at lorem scelerisque tincidunt.Pellentesque finibus vehicula scelerisque. Morbi eget quam aliquet, vehicula felis vitae, semper odio. Curabitur turpis lectus, ultricies vel nisi vulputate, porta congue sapien. Proin facilisis ipsum at lorem scelerisque tincidunt.</p>
+	    			</div>
+				</div>
+			</div>
+			
+		</div>
+
+
 
 		<footer>
-			<hr/>
 			<p>1616 W Lake Street, Minneapolis, MN, 55408 </p>
 			<p>(651) 401-3216</p>
 		</footer>
+
+
+		<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 	</body>
 </html>
