@@ -32,46 +32,48 @@
 	</style>
 </head>
 <body>
+<div class="container">
 	<div class="col-sm-12 text-center">
 		<h1>Lucky Sevens</h1>
 	</div>
 
-	<form>
+	<form name="luckySevens" onsubmit="return validateItems();">
 		<div class="form-group row">
 			<label for="startingBet" class="col-form-label col-sm-6">Starting Bet:</label>
-			<div class="col-sm-2">
+			<div class="col-lg-2 col-sm-3">
 				<input type="text" name="startingBet" id="startingBet" class="form-control" placeholder="$0.00"/>
 			</div>
 		</div>
 		<div class="col-sm-12 text-center">
-			<button onclick="checkPlay();" type="button" class="btn btn-primary">Play</button>
+			<button type="submit" class="btn btn-default" id="play">Play</button>
 		</div>
 	</form>
 	<div id="results" class="col-sm-12" style="display: none;">
 		<hr/>
 		<table id="resultsTable" class="table table-striped table-bordered">
 			<thead>
-				<tr id="r0">
+				<tr>
 					<td>Starting Bet</td>
-					<td></td>
+					<td><span id="initialBet"></span></td>
 				</tr>
 			</thead>
 			<tbody>
-				<tr id="r1">
+				<tr>
 					<td>Total Rolls Before Going Broke</td>
-					<td></td>
+					<td><span id="rollsBeforeBroke"></span></td>
 				</tr>
-				<tr id="r2">
+				<tr>
 					<td>Highest Amount Won</td>
-					<td></td>
+					<td><span id="highestWinning"></span></td>
 				</tr>
-				<tr id="r3">
+				<tr >
 					<td>Roll Count at Highest Amount Won</td>
-					<td></td>
+					<td><span id="rollAtHighestWinning"></span></td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
+</div>
 
 	<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
